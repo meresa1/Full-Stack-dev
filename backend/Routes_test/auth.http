@@ -1,0 +1,35 @@
+# FROM authController
+# REGISTER USER (WITH OUT ADDRESS)
+###
+POST http://localhost:8888/api/auth/register/ HTTP/1.1
+Content-Type:application/json
+
+{  
+    "first_name": "pitest",
+    "last_name": "meresa",
+    "password":"12345M",
+    "username":"pitest",
+    "phoneNo":"12012",
+    "phoneNo2":"41424",
+    "email":"test@gmail.com"
+}
+
+# LOGIN CUSTOMER
+###
+POST http://localhost:8888/api/auth/customers/login HTTP/1.1
+Content-Type:application/json
+
+{  
+    "company_name": "pitest",
+    "password":"123Test"
+}
+
+# LOGIN USER
+###
+POST http://localhost:8888/api/auth/login HTTP/1.1
+Content-Type:application/json
+
+{  
+    "first_name": "pitest",
+    "password":"12345M"
+}

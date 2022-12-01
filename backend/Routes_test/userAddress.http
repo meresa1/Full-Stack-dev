@@ -1,0 +1,20 @@
+
+
+### userAddress registration
+POST http://localhost:8888/api/userAddress/user HTTP/1.1
+Content-Type:application/json
+
+{
+    "phoneNo":"021212",
+    "phoneNo2":"01231322",
+    "email":"test@gmail.com",
+    "cityId":1,
+    "subCityId":1,
+    "userId":1
+   
+}
+
+# GET ALL REQUESTS
+###
+GET http://localhost:8888/api/userAddress
+

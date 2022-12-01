@@ -1,0 +1,26 @@
+
+
+### subCity registration
+POST http://localhost:8888/api/subCity/ HTTP/1.1
+Content-Type:application/json
+
+{
+    "name":"bole"
+}
+
+# GET ALL REQUESTS
+###
+GET http://localhost:8888/api/subCity
+
+# GET subCity by ID
+###
+GET http://localhost:8888/api/subCity/1
+
+# update subCity by ID
+###
+put http://localhost:8888/api/subCity/1
+Content-Type: application/json
+
+{
+ "name":"arada12"
+}

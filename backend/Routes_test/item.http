@@ -1,0 +1,16 @@
+###
+POST http://localhost:8888/api/item HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"wh",
+    "type":"derek",
+    "quantity":20
+}
+
+###
+GET http://localhost:8888/api/item HTTP/1.1
+
+
+#### GET ITEM BY ID
+GET http://localhost:8888/api/item/1 HTTP/1.1

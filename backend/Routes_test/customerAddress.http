@@ -1,0 +1,39 @@
+# FROM requestController
+# REGISTER REQUEST (WITH OUT ADDRESS)
+###
+POST http://localhost:8888/api/customerAddress/ HTTP/1.1
+Content-Type:application/json
+
+{
+"phoneNo":2141,
+"phoneNo2":23252,
+"email":"mere@gmail.com",
+"cityId":1,
+"subCityId":1,
+"customer_id":1
+}
+
+# GET ALL customerAddress
+###
+GET http://localhost:8888/api/customerAddress/ HTTP/1.1
+
+# GET REQUEST BY ID
+###
+GET http://localhost:8888/api/customerAddress/1 HTTP/1.1
+
+# UPDATE REQUEST 
+###
+PUT http://localhost:8888/api/customerAddress/1 HTTP/1.1
+Content-Type:application/json
+
+{  
+    "tarif":"1200"
+}
+
+# DELETE REQUEST BY ID
+###
+DELETE  http://localhost:8888/api/customerAddress/4 HTTP/1.1
+
+
+# ========================================================================================
+# ========================================================================================

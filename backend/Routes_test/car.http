@@ -1,0 +1,46 @@
+
+
+### car registration
+POST http://localhost:8888/api/car/ HTTP/1.1
+Content-Type:application/json
+
+{  
+    "brand": "FSR",
+    "drivePerLiter":"test",
+    "truckPlateNo":1212,
+    "trailerPlateNo":1212,
+    "capacity":"1212",
+    "status":"active"
+}
+
+
+# GET ALL REQUESTS
+###
+GET http://localhost:8888/api/car
+
+
+# GET ALLACTIVE CARS
+###
+GET http://localhost:8888/api/car/active
+
+# GET car by ID
+###
+GET http://localhost:8888/api/car/2
+
+# update car by ID
+###
+put http://localhost:8888/api/car/1
+Content-Type: application/json
+
+{
+     "brand": "PI update ",
+    "drivePerLiter": "test",
+   
+    "capacity":"1212",
+    "bodyPlateNo":214,
+    "status":"active"
+}
+
+# DELETE car by ID
+###
+DELETE  http://localhost:8888/api/car/6

@@ -1,0 +1,26 @@
+
+
+### city registration
+POST http://localhost:8888/api/city/ HTTP/1.1
+Content-Type:application/json
+
+{
+    "name":"Axum"
+}
+
+# GET ALL REQUESTS
+###
+GET http://localhost:8888/api/city
+
+# GET city by ID
+###
+GET http://localhost:8888/api/city/5
+
+# update city by ID
+###
+put http://localhost:8888/api/city/1
+Content-Type: application/json
+
+{
+     "name": "Mekelle"
+}
